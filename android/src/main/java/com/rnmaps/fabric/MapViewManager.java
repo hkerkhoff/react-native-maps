@@ -323,7 +323,7 @@ public class MapViewManager extends ViewGroupManager<MapView> implements RNMapsM
             });
         } else {
             try {
-                parent.addFeature((Feature) child, index);
+                parent.addFeature(child, index);
             } 
             catch (Throwable t) {
                 Log.e("RNMaps", "addFeature failed — skipping child", t);
